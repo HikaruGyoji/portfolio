@@ -119,6 +119,27 @@ section .row div {
     letter-spacing: 1px;
 }
 
+.works {
+    padding: 0 8%;
+    height: 700px;
+    margin-top: 50px;
+}
+
+.works-description {
+    margin-bottom: 30px;
+}
+
+.works-contents {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    gap: 20px;
+    justify-content: center;
+}
+
+.works-contents img {
+    height: 250px;
+}
+
 .footer {
     display: flex;
     justify-content: center;
