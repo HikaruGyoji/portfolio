@@ -1,100 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Rubik+Pixels&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Portfolio</title>
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Rubik+Pixels&display=swap" rel="stylesheet">
-</head>
+  <body>
+    <header>
+      <div class="header-logo-menu">
+        <div id="nav-drawer">
+          <input id="nav-input" type="checkbox" class="nav-unshown" />
+          <label id="nav-open" for="nav-input"><span></span></label>
+          <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+          <div id="nav-content">
+            <ul>
+              <a href="#skills"><li>Skills</li></a>
+              <a href="#works"><li>Works</li></a>
+              <a href="#contact"><li>Contact</li></a>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="hero">
+        <nav>
+          <h1 class="logo"><a href="#">Portfolio</a></h1>
+          <ul>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#works">Works</a></li>
+          </ul>
+          <a href="#contact" class="btn">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <div class="main-visual">
+      <video
+        class="main-background"
+        src="img/background.mp4"
+        autoplay
+        loop
+        muted
+        playsinline
+      ></video>
+      <div class="profile">
+        <div class="title">
+          <span>Web Developer</span>
+        </div>
+        <div class="name">
+          <span>Hikaru Gyoji</span>
+        </div>
+        <div class="description">
+          <span
+            >My day job is a front-end engineer.<br />
+            In addition, I do design production and mobile app
+            development.</span
+          >
+          <span
+            >This portfolio is a beta version, so please wait for content
+            updates.</span
+          >
+          <span>More extensive content will be added in the future.</span>
+        </div>
+      </div>
+    </div>
+    <section id="skills" class="skills">
+      <h2 class="skills-title">Skills</h2>
+      <p class="skills-description">スキルについて</p>
+      <div class="skills-contents">test</div>
+    </section>
+    <section id="works" class="works">
+      <h2 class="works-title">Works</h2>
+      <p class="works-description">
+        作品例として<a href="https://webdesigner-go.com/coding-practice/"
+          >『無料コーディング練習所』</a
+        >ねこポン様のコーディング練習を参考にさせていただきました。
+      </p>
+      <div class="works-contents">
+        <a href="https://hikarugyoji.github.io/work1/"
+          ><img src="./img/work-img1.webp" alt=""
+        /></a>
+        <a href="https://hikarugyoji.github.io/work2/"
+          ><img src="./img/work-img2.webp" alt=""
+        /></a>
+        <a href="https://hikarugyoji.github.io/work3/"
+          ><img src="./img/work-img3.webp" alt=""
+        /></a>
+        <a href="https://hikarugyoji.github.io/work4/"
+          ><img src="./img/work-img4.webp" alt=""
+        /></a>
+        <a href="https://hikarugyoji.github.io/work5/"
+          ><img src="./img/work-img5.webp" alt=""
+        /></a>
+        <a href="https://hikarugyoji.github.io/work6/"
+          ><img src="./img/work-img6.webp" alt=""
+        /></a>
+      </div>
+    </section>
+    <section id="contact" class="contact">
+      <h2 class="contact-title">Contact</h2>
+      <p class="contact-description">
+        For inquiries, please contact us through the following social networking
+        sites.
+      </p>
+      <div class="contact-contents">
+        <form
+          action="https://docs.google.com/forms/u/4/d/e/1FAIpQLSfMPdTuO0zn1VF9KVLl4J_mt98G4nyjOdOaDpbCsM5wNw4nsA/formResponse"
+          method="post"
+          target="hidden_iframe"
+          onsubmit="submitted=true;"
+        >
+          <label for="name">Name</label>
+          <input
+            id="name"
+            type="text"
+            name="entry.5463756"
+            required="required"
+            placeholder="Taro Tanaka"
+          />
+          <label for="email">Email</label>
+          <input
+            id="email"
+            type="email"
+            name="entry.2145872422"
+            required="required"
+            placeholder="tarotanaka@tmail.com"
+          />
+          <label for="msg">Comment</label>
+          <textarea
+            id="msg"
+            name="entry.614190020"
+            required="required"
+            placeholder="Please feel free to contact us"
+          ></textarea>
+          <button type="submit" name="button" value="送信">Send</button>
+        </form>
+        <script type="text/javascript">
+          var submitted = false;
+        </script>
+        <iframe
+          name="hidden_iframe"
+          id="hidden_iframe"
+          style="display: none"
+          onload="if(submitted)  {window.location='thanks.html';}"
+        ></iframe>
+      </div>
+    </section>
+    <footer class="footer">
+      &copy;2023 Hikaru Gyoji portfolio. All Rights Reserved.
+    </footer>
 
-<body>
-	<header>
-		<div class="header-logo-menu">
-			<div id="nav-drawer">
-					<input id="nav-input" type="checkbox" class="nav-unshown">
-					<label id="nav-open" for="nav-input"><span></span></label>
-					<label class="nav-unshown" id="nav-close" for="nav-input"></label>
-					<div id="nav-content">
-						<ul>
-							<a href="#skills"><li>Skills</li></a>
-							<a href="#works"><li>Works</li></a>
-							<a href="#contact"><li>Contact</li></a>
-						</ul>
-					</div>
-			</div>
-			</div>
-		<div class="hero">
-			<nav>
-				<h1 class="logo">Portfolio</h2>
-				<ul>
-					<li><a href="#skills">Skills</a></li>
-					<li><a href="#works">Works</a></li>
-				</ul>
-				<a href="#contact" class="btn">Contact</a>
-			</nav>
-		</div>
-	</header>
-	<div class="main-visual">
-		<video class="main-background" src="img/background.mp4" autoplay loop muted playsinline>
-		</video>
-		<div class="profile">
-			<div class="title">
-				<span>Web Developer</span>
-			</div>
-			<div class="name">
-				<span>Hikaru Gyoji</span>
-			</div>
-			<div class="description">
-				<span>My day job is a front-end engineer.<br>
-					In addition, I do design production and mobile app development.</span>
-				<span>This portfolio is a beta version, so please wait for content updates.</span>
-				<span>More extensive content will be added in the future.</span>
-			</div>
-		</div>
-	</div>
-	<section id="skills" class="skills">
-		<h2 class="skills-title">Skills</h2>
-		<p class="skills-description">スキルについて</p>
-		<div class="skills-contents">
-			test
-		</div>
-	</section>
-	<section id="works" class="works">
-		<h2 class="works-title">Works</h2>
-		<p class="works-description">作品例として<a
-				href="https://webdesigner-go.com/coding-practice/">『無料コーディング練習所』</a>ねこポン様のコーディング練習を参考にさせていただきました。</p>
-		<div class="works-contents">
-			<a href="https://hikarugyoji.github.io/work1/"><img src="./img/work-img1.webp" alt=""></a>
-			<a href="https://hikarugyoji.github.io/work2/"><img src="./img/work-img2.webp" alt=""></a>
-			<a href="https://hikarugyoji.github.io/work3/"><img src="./img/work-img3.webp" alt=""></a>
-			<a href="https://hikarugyoji.github.io/work4/"><img src="./img/work-img4.webp" alt=""></a>
-			<a href="https://hikarugyoji.github.io/work5/"><img src="./img/work-img5.webp" alt=""></a>
-			<a href="https://hikarugyoji.github.io/work6/"><img src="./img/work-img6.webp" alt=""></a>
-		</div>
-	</section>
-	<section id="contact" class="contact">
-		<h2 class="contact-title">Contact</h2>
-		<p class="contact-description">コンタクトフォーム</p>
-		<div class="contact-contents">
-			<form>
-				<label for="name">Name</label>
-				<input id="name" type="text" name="name" placeholder="Taro Tanaka">
-				<label for="email">Email</label>
-				<input id="email" type="text" name="name" placeholder="tarotanaka@tmail.com">
-				<label for="msg">Comment</label>
-				<textarea id="msg" name="name" placeholder="Please feel free to contact us"></textarea>
-				<button type="submit" name="button" value="submit"></button>
-				</form>
-		</div>
-	</section>
-	<footer class="footer">&copy;2023 Hikaru Gyoji portfolio. All Rights Reserved.</footer>
-
-	<script src="js/function.js"></script>
-</body>
-
+    <script src="js/function.js"></script>
+  </body>
 </html>

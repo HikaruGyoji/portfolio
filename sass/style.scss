@@ -3,6 +3,11 @@
 @use "./global" as *;
 
 header {
+  .logo {
+    a {
+      color: white;
+    }
+  }
   #nav-content {
     display: none;
   }
@@ -294,6 +299,10 @@ section {
   }
 }
 
+.contact {
+  margin-bottom: 100px;
+}
+
 .skills,
 .works,
 .contact {
@@ -335,6 +344,47 @@ section {
   font-size: 12px;
   padding: 10px;
   margin-top: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 20%;
+  @include mq("md") {
+    padding: 20px 0;
+  }
+  input {
+    padding: 10px;
+    color: black;
+    border: 1px solid #999;
+    margin-bottom: 10px;
+  }
+  label::after {
+    content: "*";
+    color: red;
+  }
+  textarea {
+    padding: 10px;
+    height: 100px;
+    color: black;
+    font-size: 14px;
+    border: 1px solid #999;
+  }
+  button {
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin-top: 20px;
+  }
+}
+
+.thanks {
+  height: 87vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @keyframes animate {
