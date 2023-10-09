@@ -11,17 +11,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // chart
 const frontData = {
-  labels: [
-    "HTML/CSS",
-    "JS/TS",
-    "React/Next",
-    "Vue/Nuxt",
-    "Svelte/SvelteKit",
-    "WordPress",
-  ],
+  labels: ["HTML/CSS", "JS/TS", "React", "Vue", "Svelte", "WordPress"],
   datasets: [
     {
-      data: [4, 2, 3, 4, 5, 3],
+      data: [4, 4, 3, 4, 3, 4],
       label: "Front-end",
       backgroundColor: "rgba(0, 0, 255, 0.3)", // 青系の背景色
       borderCapStyle: "butt",
@@ -38,17 +31,10 @@ const frontData = {
 };
 
 const backData = {
-  labels: [
-    "Node.js",
-    "Express.js",
-    "Django",
-    "Spring Boot",
-    "Ruby on Rails",
-    "ASP.NET",
-  ],
+  labels: ["Python", "Django", "GraphQL", "FastAPI", "MySQL", "Express.js"],
   datasets: [
     {
-      data: [4, 3, 3, 4, 5, 3],
+      data: [4, 2, 2, 2, 2, 3],
       label: "Back-end",
       backgroundColor: "rgba(255, 0, 0, 0.3)", // 赤系の背景色
       borderCapStyle: "butt",
@@ -68,7 +54,7 @@ const devOptData = {
   labels: ["Git", "Docker", "CI/CD", "Testing", "Code Review", "Agile/Scrum"],
   datasets: [
     {
-      data: [5, 4, 4, 3, 4, 5],
+      data: [4, 2, 3, 3, 3, 3],
       label: "DevOps",
       backgroundColor: "rgba(0, 128, 0, 0.3)", // 緑系の背景色
       borderCapStyle: "butt",
@@ -89,17 +75,21 @@ const frontOptions = {
     r: {
       min: 0,
       max: 5,
-      backgroundColor: "rgba(135, 206, 235, 0.5)", // 青系の背景色
+      backgroundColor: "rgba(135, 206, 235, 0.5)",
       grid: {
-        color: "#BBB", // グリッド色
+        color: "black",
       },
       angleLines: {
-        color: "#BBB", // 深緑色のアングルライン
+        color: "black",
       },
       pointLabels: {
-        color: "black", // ラベル
+        color: "black",
       },
     },
+  },
+  animation: {
+    duration: 1500, // アニメーションの再生時間（ミリ秒）
+    easing: "easeInOutQuart", // アニメーションのイージング
   },
 };
 
@@ -108,17 +98,21 @@ const backOptions = {
     r: {
       min: 0,
       max: 5,
-      backgroundColor: "rgba(255, 69, 0, 0.5)", // 赤系の背景色
+      backgroundColor: "rgba(255, 69, 0, 0.5)",
       grid: {
-        color: "#BBB", // グリッド色
+        color: "black",
       },
       angleLines: {
-        color: "#BBB", // グリッド色
+        color: "black",
       },
       pointLabels: {
-        color: "black", // ラベル
+        color: "black",
       },
     },
+  },
+  animation: {
+    duration: 1500,
+    easing: "easeInOutQuart",
   },
 };
 
@@ -127,17 +121,21 @@ const devOptOptions = {
     r: {
       min: 0,
       max: 5,
-      backgroundColor: "rgba(50, 205, 50, 0.5)", // 緑系の背景色
+      backgroundColor: "rgba(50, 205, 50, 0.5)",
       grid: {
-        color: "#BBB", // グリッド色
+        color: "black",
       },
       angleLines: {
-        color: "#BBB", // グリッド色
+        color: "black",
       },
       pointLabels: {
-        color: "black", // ラベル
+        color: "black",
       },
     },
+  },
+  animation: {
+    duration: 1500,
+    easing: "easeInOutQuart",
   },
 };
 
