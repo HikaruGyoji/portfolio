@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  font-family: "";
+  font-family: "poppins";
 }
 
 a[href^="tel:"] {
@@ -224,7 +224,7 @@ header #nav-content {
 }
 header .hero {
   width: 100%;
-  background-color: skyblue;
+  background-image: linear-gradient(90deg, rgb(34, 141, 167), rgb(186, 255, 254));
 }
 header nav {
   display: flex;
@@ -379,10 +379,13 @@ section .row div {
 }
 
 .footer {
+  background-image: linear-gradient(90deg, rgb(34, 141, 167), rgb(186, 255, 254));
+  color: white;
   display: flex;
   justify-content: center;
   font-size: 12px;
   padding: 10px;
+  margin-top: 20px;
 }
 
 @keyframes animate {
