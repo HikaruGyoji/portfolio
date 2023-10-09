@@ -244,6 +244,13 @@ header #nav-content {
     top: 1%;
     right: 5%;
   }
+}
+@media screen and (max-width: 768px) and (max-width: 768px) {
+  header .header-logo-menu {
+    top: 1.5%;
+  }
+}
+@media screen and (max-width: 768px) {
   header .logo-area {
     text-align: center;
     margin: auto;
@@ -258,6 +265,11 @@ header nav {
   align-items: center;
   justify-content: space-between;
   padding: 0 8%;
+}
+@media screen and (max-width: 768px) {
+  header nav {
+    padding: 8px 8%;
+  }
 }
 header nav ul {
   list-style: none;

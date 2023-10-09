@@ -124,6 +124,9 @@ header {
       position: absolute;
       top: 1%;
       right: 5%;
+      @include mq("md") {
+        top: 1.5%;
+      }
     }
 
     /* ロゴやサイトタイトルをセンタリング */
@@ -143,6 +146,9 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 0 8%;
+    @include mq("md") {
+      padding: 8px 8%;
+    }
 
     ul {
       list-style: none;
