@@ -280,6 +280,9 @@ header .logo {
 
 .main-visual {
   height: 500px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 @media screen and (max-width: 768px) {
   .main-visual {
@@ -297,65 +300,60 @@ header .logo {
     object-fit: cover;
   }
 }
-
-section .row div {
-  animation: animate 60s linear infinite;
-  padding-right: 15px;
-}
-
-.profile {
-  position: absolute;
-  top: 20%;
-  left: 60%;
-  width: 400px;
+.main-visual .profile {
+  padding: 50px 20px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.7); /* Use rgba for background color with opacity */
+  margin-right: 8%;
+  position: relative; /* Add relative positioning */
 }
 @media screen and (max-width: 768px) {
-  .profile {
-    top: 13%;
-    left: 10%;
-    width: 80%;
+  .main-visual .profile {
+    margin: 0 auto;
   }
 }
-.profile .profile-background {
+.main-visual .profile .profile-background {
   width: 450px;
   height: 350px;
   top: -12%;
   left: -8%;
   position: absolute;
-  background: black;
+  background: rgba(0, 0, 0, 0.7); /* Use rgba for background color with opacity */
   border-radius: 5px;
-  opacity: 0.7;
   z-index: -1;
 }
 @media screen and (max-width: 768px) {
-  .profile .profile-background {
+  .main-visual .profile .profile-background {
     width: 350px;
   }
 }
-.profile .title {
+.main-visual .profile .title,
+.main-visual .profile .name,
+.main-visual .profile .description {
   color: white;
   text-shadow: 0 0 10px skyblue;
-  white-space: nowrap;
+}
+.main-visual .profile .title {
   font-size: 24px;
   letter-spacing: 1px;
 }
-.profile .name {
-  color: white;
-  text-shadow: 0 0 10px skyblue;
-  white-space: nowrap;
+.main-visual .profile .name {
   font-size: 40px;
   letter-spacing: 1px;
 }
-.profile .description {
-  color: white;
-  text-shadow: 0 0 10px skyblue;
+.main-visual .profile .description {
   font-size: 12px;
   letter-spacing: 1px;
   display: block;
 }
-.profile .description span {
+.main-visual .profile .description span {
   padding: 10px 0;
   display: block;
+}
+
+section .row div {
+  animation: animate 60s linear infinite;
+  padding-right: 15px;
 }
 
 .works {

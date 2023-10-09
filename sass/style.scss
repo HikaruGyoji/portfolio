@@ -164,6 +164,9 @@ header {
 
 .main-visual {
   height: 500px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   @include mq("md") {
     height: 400px;
   }
@@ -176,6 +179,69 @@ header {
       object-fit: cover;
     }
   }
+
+  .profile {
+    padding: 50px 20px;
+    border-radius: 5px;
+    background-color: rgba(
+      0,
+      0,
+      0,
+      0.7
+    ); /* Use rgba for background color with opacity */
+    margin-right: 8%;
+    @include mq("md") {
+      margin: 0 auto;
+    }
+    position: relative; /* Add relative positioning */
+  }
+
+  .profile .profile-background {
+    width: 450px;
+    height: 350px;
+    top: -12%;
+    left: -8%;
+    position: absolute;
+    background: rgba(
+      0,
+      0,
+      0,
+      0.7
+    ); /* Use rgba for background color with opacity */
+    border-radius: 5px;
+    z-index: -1;
+    @include mq("md") {
+      width: 350px;
+    }
+  }
+
+  .profile .title,
+  .profile .name,
+  .profile .description {
+    color: white;
+    text-shadow: 0 0 10px skyblue;
+  }
+
+  .profile .title {
+    font-size: 24px;
+    letter-spacing: 1px;
+  }
+
+  .profile .name {
+    font-size: 40px;
+    letter-spacing: 1px;
+  }
+
+  .profile .description {
+    font-size: 12px;
+    letter-spacing: 1px;
+    display: block;
+  }
+
+  .profile .description span {
+    padding: 10px 0;
+    display: block;
+  }
 }
 
 section {
@@ -183,63 +249,6 @@ section {
     div {
       animation: animate 60s linear infinite;
       padding-right: 15px;
-    }
-  }
-}
-
-.profile {
-  position: absolute;
-  top: 20%;
-  left: 60%;
-  width: 400px;
-
-  @include mq("md") {
-    top: 13%;
-    left: 10%;
-    width: 80%;
-  }
-
-  .profile-background {
-    width: 450px;
-    height: 350px;
-    top: -12%;
-    left: -8%;
-    position: absolute;
-    background: black;
-    border-radius: 5px;
-    opacity: 0.7;
-    z-index: -1;
-    @include mq("md") {
-      width: 350px;
-    }
-  }
-
-  .title {
-    color: white;
-    text-shadow: 0 0 10px skyblue;
-    white-space: nowrap;
-    font-size: 24px;
-    letter-spacing: 1px;
-  }
-
-  .name {
-    color: white;
-    text-shadow: 0 0 10px skyblue;
-    white-space: nowrap;
-    font-size: 40px;
-    letter-spacing: 1px;
-  }
-
-  .description {
-    color: white;
-    text-shadow: 0 0 10px skyblue;
-    font-size: 12px;
-    letter-spacing: 1px;
-    display: block;
-
-    span {
-      padding: 10px 0;
-      display: block;
     }
   }
 }
