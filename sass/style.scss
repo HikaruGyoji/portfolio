@@ -77,6 +77,7 @@ header {
           color: rgb(34 141 167);
           li {
             font-size: 18px;
+            font-weight: bold;
             padding: 20px;
             border-bottom: solid 1px rgb(34 141 167);
           }
@@ -121,7 +122,7 @@ header {
       display: flex;
       flex-direction: row;
       position: absolute;
-      top: 2%;
+      top: 1%;
       right: 5%;
     }
 
@@ -173,7 +174,7 @@ header {
   .btn {
     background-color: #111;
     color: white;
-    padding: 8px 25px;
+    padding: 4px 25px;
     text-decoration: none;
     font-weight: bold;
     transition: all 0.3s;
@@ -189,7 +190,8 @@ header {
 
   .logo {
     color: white;
-    font-size: 35px;
+    font-size: 24px;
+    font-weight: bold;
     cursor: pointer;
   }
 }
@@ -292,6 +294,7 @@ section {
 
   .works-title {
     padding-top: 50px;
+    font-weight: bold;
   }
   .works-description {
     margin-bottom: 30px;
