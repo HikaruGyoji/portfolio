@@ -281,34 +281,21 @@ header .logo {
 .main-visual {
   height: 500px;
 }
-
-.background-letters {
-  height: 100%;
+@media screen and (max-width: 768px) {
+  .main-visual {
+    height: 400px;
+  }
+}
+.main-visual .main-background {
   width: 100%;
-  background-color: #111;
-  overflow: hidden;
-  user-select: none;
+  z-index: -1;
+  position: absolute;
 }
-.background-letters .row {
-  display: flex;
-  white-space: nowrap;
-  font-size: 64px;
-  padding: 10px 0;
-  transform: rotate(-30deg);
-  position: relative;
-  top: -100%;
-  left: -10%;
-}
-.background-letters .row .background-letter {
-  color: rgba(0, 0, 0, 0.5);
-  transition: 1s;
-  font-family: "Rubik Pixels", cursive;
-  letter-spacing: -10px;
-}
-.background-letters .row .background-letter:hover {
-  color: skyblue;
-  text-shadow: 0 0 120px skyblue;
-  transition: 0s;
+@media screen and (max-width: 768px) {
+  .main-visual .main-background {
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 section .row div {
@@ -324,7 +311,7 @@ section .row div {
 }
 @media screen and (max-width: 768px) {
   .profile {
-    top: 17%;
+    top: 13%;
     left: 10%;
     width: 80%;
   }
@@ -358,7 +345,10 @@ section .row div {
 .works {
   padding: 0 8%;
   height: auto;
-  margin-top: 50px;
+  background-color: white;
+}
+.works .works-title {
+  padding-top: 50px;
 }
 .works .works-description {
   margin-bottom: 30px;
@@ -368,6 +358,7 @@ section .row div {
   grid-template-columns: repeat(3, 300px);
   gap: 20px;
   justify-content: center;
+  margin-bottom: 100px;
 }
 @media screen and (max-width: 768px) {
   .works .works-contents {

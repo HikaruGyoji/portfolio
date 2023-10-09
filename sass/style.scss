@@ -164,36 +164,16 @@ header {
 
 .main-visual {
   height: 500px;
-}
-
-.background-letters {
-  height: 100%;
-  width: 100%;
-  background-color: #111;
-  overflow: hidden;
-  user-select: none;
-
-  .row {
-    display: flex;
-    white-space: nowrap;
-    font-size: 64px;
-    padding: 10px 0;
-    transform: rotate(-30deg);
-    position: relative;
-    top: -100%;
-    left: -10%;
-
-    .background-letter {
-      color: rgba(0, 0, 0, 0.5);
-      transition: 1s;
-      font-family: "Rubik Pixels", cursive;
-      letter-spacing: -10px;
-
-      &:hover {
-        color: skyblue;
-        text-shadow: 0 0 120px skyblue;
-        transition: 0s;
-      }
+  @include mq("md") {
+    height: 400px;
+  }
+  .main-background {
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    @include mq("md") {
+      height: 100%;
+      object-fit: cover;
     }
   }
 }
@@ -214,7 +194,7 @@ section {
   width: 400px;
 
   @include mq("md") {
-    top: 17%;
+    top: 13%;
     left: 10%;
     width: 80%;
   }
@@ -252,8 +232,11 @@ section {
 .works {
   padding: 0 8%;
   height: auto;
-  margin-top: 50px;
+  background-color: white;
 
+  .works-title {
+    padding-top: 50px;
+  }
   .works-description {
     margin-bottom: 30px;
   }
@@ -263,6 +246,7 @@ section {
     grid-template-columns: repeat(3, 300px);
     gap: 20px;
     justify-content: center;
+    margin-bottom: 100px;
     @include mq("md") {
       grid-template-columns: repeat(1, 300px);
     }
