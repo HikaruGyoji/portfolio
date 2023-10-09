@@ -385,19 +385,33 @@ section .row div {
   padding-right: 15px;
 }
 
-.works {
+.skills,
+.works,
+.contact {
   padding: 0 8%;
   height: auto;
   background-color: white;
 }
-.works .works-title {
+.skills .skills-title,
+.skills .works-title,
+.skills .contact-title,
+.works .skills-title,
+.works .works-title,
+.works .contact-title,
+.contact .skills-title,
+.contact .works-title,
+.contact .contact-title {
   padding-top: 50px;
   font-weight: bold;
 }
-.works .works-description {
+.skills .works-description,
+.works .works-description,
+.contact .works-description {
   margin-bottom: 30px;
 }
-.works .works-contents {
+.skills .works-contents,
+.works .works-contents,
+.contact .works-contents {
   display: grid;
   grid-template-columns: repeat(3, 300px);
   gap: 20px;
@@ -405,11 +419,15 @@ section .row div {
   margin-bottom: 100px;
 }
 @media screen and (max-width: 768px) {
-  .works .works-contents {
+  .skills .works-contents,
+  .works .works-contents,
+  .contact .works-contents {
     grid-template-columns: repeat(1, 300px);
   }
 }
-.works .works-contents img {
+.skills .works-contents img,
+.works .works-contents img,
+.contact .works-contents img {
   height: 250px;
 }
 

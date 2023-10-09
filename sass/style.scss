@@ -288,12 +288,16 @@ section {
   }
 }
 
-.works {
+.skills,
+.works,
+.contact {
   padding: 0 8%;
   height: auto;
   background-color: white;
 
-  .works-title {
+  .skills-title,
+  .works-title,
+  .contact-title {
     padding-top: 50px;
     font-weight: bold;
   }
