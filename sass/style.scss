@@ -43,7 +43,6 @@ header {
     #nav-open span:after {
       bottom: -16px;
     }
-
     /* 閉じる用の薄黒箇所 */
     #nav-close {
       display: none;
@@ -91,9 +90,31 @@ header {
       opacity: 0.5;
     }
 
+    #nav-input:checked ~ #nav-close {
+      display: block;
+      opacity: 0.5;
+    }
+
     #nav-input:checked ~ #nav-content {
       transform: translateX(0%);
       box-shadow: 6px 0 25px rgba(0, 0, 0, 0.15);
+    }
+
+    #nav-input:checked + #nav-open span:before,
+    #nav-input:checked + #nav-open span:after {
+      transition: transform 0.3s ease-in-out;
+    }
+
+    #nav-input:checked + #nav-open span:before {
+      transform: translateY(0%) rotate(45deg);
+    }
+
+    #nav-input:checked + #nav-open span:after {
+      transform: translateY(-250%) rotate(-45deg);
+    }
+
+    #nav-input:checked + #nav-open span {
+      background: transparent;
     }
 
     .header-logo-menu {

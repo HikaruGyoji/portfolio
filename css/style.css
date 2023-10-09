@@ -215,9 +215,26 @@ header #nav-content {
     display: block;
     opacity: 0.5;
   }
+  header #nav-input:checked ~ #nav-close {
+    display: block;
+    opacity: 0.5;
+  }
   header #nav-input:checked ~ #nav-content {
     transform: translateX(0%);
     box-shadow: 6px 0 25px rgba(0, 0, 0, 0.15);
+  }
+  header #nav-input:checked + #nav-open span:before,
+  header #nav-input:checked + #nav-open span:after {
+    transition: transform 0.3s ease-in-out;
+  }
+  header #nav-input:checked + #nav-open span:before {
+    transform: translateY(0%) rotate(45deg);
+  }
+  header #nav-input:checked + #nav-open span:after {
+    transform: translateY(-250%) rotate(-45deg);
+  }
+  header #nav-input:checked + #nav-open span {
+    background: transparent;
   }
   header .header-logo-menu {
     display: flex;
