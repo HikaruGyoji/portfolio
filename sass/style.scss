@@ -2,61 +2,164 @@
 @use "./base/reset";
 @use "./global" as *;
 
-.hero {
-  width: 100%;
-  background-color: skyblue;
-}
+header {
+  #nav-content {
+    display: none;
+  }
+  @include mq("md") {
+    #nav-drawer {
+      position: relative;
+    }
 
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 8%;
+    /* チェックボックス等は非表示に */
+    .nav-unshown {
+      display: none;
+    }
 
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-
-    li {
+    /* アイコンのスペース */
+    #nav-open {
       display: inline-block;
-      padding: 10px 25px;
+      width: 30px;
+      height: 22px;
+      vertical-align: middle;
+    }
 
-      a {
-        color: white;
-        text-decoration: none;
-        font-weight: bold;
-        transition: all 0.3s;
+    /* ハンバーガーの形をCSSで表現 */
+    #nav-open span,
+    #nav-open span:before,
+    #nav-open span:after {
+      position: absolute;
+      height: 3px; /* 線の太さ */
+      width: 25px; /* 長さ */
+      border-radius: 3px;
+      background: #555;
+      display: block;
+      content: "";
+      cursor: pointer;
+    }
+    #nav-open span:before {
+      bottom: -8px;
+    }
+    #nav-open span:after {
+      bottom: -16px;
+    }
 
-        &:hover {
-          color: #111;
+    /* 閉じる用の薄黒箇所 */
+    #nav-close {
+      display: none;
+      position: fixed;
+      z-index: 99;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: black;
+      opacity: 0;
+      transition: 0.3s ease-in-out;
+    }
+
+    /* メニューの中身 */
+    #nav-content {
+      display: block;
+      overflow: auto;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 9999;
+      width: 90%;
+      max-width: 330px; /* 最大幅（お好みで調整を） */
+      height: 100%;
+      background: #fff;
+      transition: 0.3s ease-in-out;
+      transform: translateX(-105%);
+    }
+
+    /* チェックがついたら表示させる */
+    #nav-input:checked ~ #nav-close {
+      display: block;
+      opacity: 0.5;
+    }
+
+    #nav-input:checked ~ #nav-content {
+      transform: translateX(0%);
+      box-shadow: 6px 0 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .header-logo-menu {
+      display: flex;
+      flex-direction: row;
+      position: absolute;
+      top: 2%;
+      right: 5%;
+    }
+
+    /* ロゴやサイトタイトルをセンタリング */
+    .logo-area {
+      text-align: center;
+      margin: auto;
+    }
+  }
+
+  .hero {
+    width: 100%;
+    background-color: skyblue;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8%;
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      @include mq("md") {
+        display: none;
+      }
+
+      li {
+        display: inline-block;
+        padding: 10px 25px;
+
+        a {
+          color: white;
+          text-decoration: none;
+          font-weight: bold;
+          transition: all 0.3s;
+
+          &:hover {
+            color: #111;
+          }
         }
       }
     }
   }
-}
 
-.btn {
-  background-color: #111;
-  color: white;
-  padding: 8px 25px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: all 0.3s;
+  .btn {
+    background-color: #111;
+    color: white;
+    padding: 8px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s;
 
-  &:hover {
-    border-radius: 20px;
-    transform: scale(1.1);
+    &:hover {
+      border-radius: 20px;
+      transform: scale(1.1);
+    }
+    @include mq("md") {
+      display: none;
+    }
   }
-  @include mq("md") {
-    display: none;
-  }
-}
 
-.logo {
-  color: white;
-  font-size: 35px;
-  cursor: pointer;
+  .logo {
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+  }
 }
 
 .main-visual {
