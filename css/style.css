@@ -289,6 +289,7 @@ header .btn {
   text-decoration: none;
   font-weight: bold;
   transition: all 0.3s;
+  border-radius: 5px;
 }
 header .btn:hover {
   border-radius: 20px;
