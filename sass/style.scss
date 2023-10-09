@@ -316,6 +316,19 @@ section {
     padding-top: 50px;
     font-weight: bold;
   }
+
+  .skills-contents {
+    display: flex;
+    width: 500px;
+    padding: 0 8%;
+    gap: 15px;
+    @include mq("md") {
+      display: block;
+      width: auto;
+      padding: 0;
+    }
+  }
+
   .works-description {
     margin-bottom: 30px;
   }

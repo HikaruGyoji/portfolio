@@ -423,6 +423,23 @@ section .row div {
   padding-top: 50px;
   font-weight: bold;
 }
+.skills .skills-contents,
+.works .skills-contents,
+.contact .skills-contents {
+  display: flex;
+  width: 500px;
+  padding: 0 8%;
+  gap: 15px;
+}
+@media screen and (max-width: 768px) {
+  .skills .skills-contents,
+  .works .skills-contents,
+  .contact .skills-contents {
+    display: block;
+    width: auto;
+    padding: 0;
+  }
+}
 .skills .works-description,
 .works .works-description,
 .contact .works-description {

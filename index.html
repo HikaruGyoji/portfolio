@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Rubik+Pixels&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.js"></script>
   </head>
 
   <body>
@@ -73,8 +74,12 @@
     </div>
     <section id="skills" class="skills">
       <h2 class="skills-title">Skills</h2>
-      <p class="skills-description">スキルについて</p>
-      <div class="skills-contents">test</div>
+      <p class="skills-description">About my skills</p>
+      <div class="skills-contents">
+        <canvas id="frontRadarChart" width="400" height="400"></canvas>
+        <canvas id="backRadarChart" width="400" height="400"></canvas>
+        <canvas id="devOptRadarChart" width="400" height="400"></canvas>
+      </div>
     </section>
     <section id="works" class="works">
       <h2 class="works-title">Works</h2>
