@@ -326,7 +326,7 @@ section .row div {
   .profile {
     top: 17%;
     left: 10%;
-    width: 340px;
+    width: 80%;
   }
 }
 .profile .title {
