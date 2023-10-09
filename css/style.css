@@ -324,8 +324,9 @@ section .row div {
 }
 @media screen and (max-width: 768px) {
   .profile {
-    top: 22%;
-    left: 5%;
+    top: 17%;
+    left: 10%;
+    width: 340px;
   }
 }
 .profile .title {
@@ -356,7 +357,7 @@ section .row div {
 
 .works {
   padding: 0 8%;
-  height: 700px;
+  height: auto;
   margin-top: 50px;
 }
 .works .works-description {
@@ -381,6 +382,7 @@ section .row div {
   display: flex;
   justify-content: center;
   font-size: 12px;
+  padding: 10px;
 }
 
 @keyframes animate {

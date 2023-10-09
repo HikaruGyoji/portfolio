@@ -214,8 +214,9 @@ section {
   width: 400px;
 
   @include mq("md") {
-    top: 22%;
-    left: 5%;
+    top: 17%;
+    left: 10%;
+    width: 340px;
   }
 
   .title {
@@ -250,7 +251,7 @@ section {
 
 .works {
   padding: 0 8%;
-  height: 700px;
+  height: auto;
   margin-top: 50px;
 
   .works-description {
@@ -276,6 +277,7 @@ section {
   display: flex;
   justify-content: center;
   font-size: 12px;
+  padding: 10px;
 }
 
 @keyframes animate {
