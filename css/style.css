@@ -201,6 +201,15 @@ header #nav-content {
     background: #fff;
     transition: 0.3s ease-in-out;
     transform: translateX(-105%);
+    background-color: rgb(186, 255, 254);
+  }
+  header #nav-content ul a {
+    color: rgb(34, 141, 167);
+  }
+  header #nav-content ul a li {
+    font-size: 18px;
+    padding: 20px;
+    border-bottom: solid 1px rgb(34, 141, 167);
   }
   header #nav-input:checked ~ #nav-close {
     display: block;
