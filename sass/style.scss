@@ -96,11 +96,6 @@ header {
       opacity: 0.5;
     }
 
-    #nav-input:checked ~ #nav-close {
-      display: block;
-      opacity: 0.5;
-    }
-
     #nav-input:checked ~ #nav-content {
       transform: translateX(0%);
       box-shadow: 6px 0 25px rgba(0, 0, 0, 0.15);
@@ -130,7 +125,7 @@ header {
       top: 1%;
       right: 5%;
       @include mq("md") {
-        top: 1.5%;
+        top: 1.75%;
       }
     }
 
@@ -185,18 +180,21 @@ header {
   .btn {
     background-color: #111;
     color: white;
-    padding: 4px 25px;
+    padding: 4px 15px;
     text-decoration: none;
     font-weight: bold;
     transition: all 0.3s;
     border-radius: 5px;
-
+    option {
+      text-align: center;
+    }
     &:hover {
       border-radius: 20px;
       transform: scale(1.1);
     }
     @include mq("md") {
-      display: none;
+      right: 70px;
+      position: absolute;
     }
   }
 
@@ -337,8 +335,8 @@ section {
     display: grid;
     grid-template-columns: repeat(3, 300px);
     gap: 20px;
-    justify-content: center;
     margin-bottom: 100px;
+    justify-content: center;
     @include mq("md") {
       grid-template-columns: repeat(1, 300px);
     }

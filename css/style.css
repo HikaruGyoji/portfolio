@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  font-family: "poppins";
+  font-family: "Poppins, sans-serif";
 }
 
 a[href^="tel:"] {
@@ -219,10 +219,6 @@ header #nav-content {
     display: block;
     opacity: 0.5;
   }
-  header #nav-input:checked ~ #nav-close {
-    display: block;
-    opacity: 0.5;
-  }
   header #nav-input:checked ~ #nav-content {
     transform: translateX(0%);
     box-shadow: 6px 0 25px rgba(0, 0, 0, 0.15);
@@ -250,7 +246,7 @@ header #nav-content {
 }
 @media screen and (max-width: 768px) and (max-width: 768px) {
   header .header-logo-menu {
-    top: 1.5%;
+    top: 1.75%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -300,11 +296,14 @@ header nav ul li a:hover {
 header .btn {
   background-color: #111;
   color: white;
-  padding: 4px 25px;
+  padding: 4px 15px;
   text-decoration: none;
   font-weight: bold;
   transition: all 0.3s;
   border-radius: 5px;
+}
+header .btn option {
+  text-align: center;
 }
 header .btn:hover {
   border-radius: 20px;
@@ -312,7 +311,8 @@ header .btn:hover {
 }
 @media screen and (max-width: 768px) {
   header .btn {
-    display: none;
+    right: 70px;
+    position: absolute;
   }
 }
 header .logo {
@@ -451,8 +451,8 @@ section .row div {
   display: grid;
   grid-template-columns: repeat(3, 300px);
   gap: 20px;
-  justify-content: center;
   margin-bottom: 100px;
+  justify-content: center;
 }
 @media screen and (max-width: 768px) {
   .skills .works-contents,

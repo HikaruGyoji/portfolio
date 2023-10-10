@@ -1,0 +1,42 @@
+{
+  "label-portfolio": {
+    "en": "Portfolio",
+    "ja": "ポートフォリオ"
+  },
+  "label-skills": {
+    "en": "skills",
+    "ja": "スキル"
+  },
+  "label-works": {
+    "en": "works",
+    "ja": "作品"
+  },
+  "label-contact": {
+    "en": "contact",
+    "ja": "お問い合わせ"
+  },
+  "label-title": {
+    "en": "Web Developer",
+    "ja": "ウェブデベロッパー"
+  },
+  "label-name": {
+    "en": "Hikaru Gyoji",
+    "ja": "行事 光"
+  },
+  "label-contact-description": {
+    "en": "Please feel free to contact me if you have any questions.",
+    "ja": "ご質問等ございましたらお気軽にご連絡ください。"
+  },
+  "label-contact-name": {
+    "en": "Name",
+    "ja": "お名前"
+  },
+  "label-contact-comment": {
+    "en": "Comment",
+    "ja": "本文"
+  },
+  "label-contact-send": {
+    "en": "Send",
+    "ja": "送信"
+  }
+}

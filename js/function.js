@@ -1,3 +1,22 @@
+// multi language
+const glot = new Glottologist();
+const languageSelect = document.getElementById("language-select");
+const body = document.querySelector("body");
+languageSelect.addEventListener("change", (event) => {
+  const selectedLanguage = event.target.value;
+  if (selectedLanguage === "ja") {
+    body.style.fontFamily = "Noto Sans JP";
+    glot.import("../multiLanguage.json").then(() => {
+      glot.render("ja");
+    });
+  } else if (selectedLanguage === "en") {
+    body.style.fontFamily = "Poppins";
+    glot.import("../multiLanguage.json").then(() => {
+      glot.render("en");
+    });
+  }
+});
+
 // close the hamburger menu
 document.addEventListener("DOMContentLoaded", function () {
   const navContentLinks = document.querySelectorAll("#nav-content a li");
@@ -50,12 +69,12 @@ const backData = {
   ],
 };
 
-const devOptData = {
+const othersData = {
   labels: ["Git", "Docker", "CI/CD", "Testing", "Code Review", "Agile/Scrum"],
   datasets: [
     {
       data: [4, 2, 3, 3, 3, 3],
-      label: "DevOps",
+      label: "Others",
       backgroundColor: "rgba(0, 128, 0, 0.3)", // 緑系の背景色
       borderCapStyle: "butt",
       borderColor: "rgba(0, 255, 0, 1)", // 緑系の線の色
@@ -116,7 +135,7 @@ const backOptions = {
   },
 };
 
-const devOptOptions = {
+const othersOptions = {
   scales: {
     r: {
       min: 0,
@@ -153,9 +172,9 @@ const backChart = new Chart(backCtx, {
   options: backOptions,
 });
 
-const devOptCtx = document.getElementById("devOptRadarChart");
-const devOptChart = new Chart(devOptCtx, {
+const othersCtx = document.getElementById("othersRadarChart");
+const othersChart = new Chart(othersCtx, {
   type: "radar",
-  data: devOptData,
-  options: devOptOptions,
+  data: othersData,
+  options: othersOptions,
 });
