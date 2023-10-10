@@ -2,7 +2,7 @@
 const glot = new Glottologist();
 const languageSelect = document.getElementById("language-select");
 const body = document.querySelector("body");
-const path = "../multiLanguage.json" || "../portfolio/multiLanguage.json";
+const path = "../portfolio/multiLanguage.json";
 languageSelect.addEventListener("change", (event) => {
   const selectedLanguage = event.target.value;
   if (selectedLanguage === "ja") {
