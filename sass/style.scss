@@ -12,6 +12,12 @@ header {
     display: none;
   }
   @include mq("md") {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100px;
+    z-index: 9999;
+    width: 100%;
     #nav-drawer {
       position: relative;
     }
@@ -125,7 +131,7 @@ header {
       top: 1%;
       right: 5%;
       @include mq("md") {
-        top: 1.75%;
+        top: 12px;
       }
     }
 
