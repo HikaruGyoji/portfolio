@@ -2,6 +2,7 @@
 const glot = new Glottologist();
 const languageSelect = document.getElementById("language-select");
 const body = document.querySelector("body");
+const path = "../multiLanguage.json" || "../portfolio/multiLanguage.json";
 languageSelect.addEventListener("change", (event) => {
   const selectedLanguage = event.target.value;
   if (selectedLanguage === "ja") {
@@ -13,11 +14,6 @@ languageSelect.addEventListener("change", (event) => {
     body.style.fontFamily = "Poppins";
     glot.import("../multiLanguage.json").then(() => {
       glot.render("en");
-    });
-  } else {
-    body.style.fontFamily = "Noto Sans JP";
-    glot.import("../multiLanguage.json").then(() => {
-      glot.render("ja");
     });
   }
 });
