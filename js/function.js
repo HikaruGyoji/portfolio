@@ -7,12 +7,12 @@ languageSelect.addEventListener("change", (event) => {
   const selectedLanguage = event.target.value;
   if (selectedLanguage === "ja") {
     body.style.fontFamily = "Noto Sans JP";
-    glot.import("../multiLanguage.json").then(() => {
+    glot.import(path).then(() => {
       glot.render("ja");
     });
   } else if (selectedLanguage === "en") {
     body.style.fontFamily = "Poppins";
-    glot.import("../multiLanguage.json").then(() => {
+    glot.import(path).then(() => {
       glot.render("en");
     });
   }
