@@ -14,6 +14,11 @@ languageSelect.addEventListener("change", (event) => {
     glot.import("../multiLanguage.json").then(() => {
       glot.render("en");
     });
+  } else {
+    body.style.fontFamily = "Noto Sans JP";
+    glot.import("../multiLanguage.json").then(() => {
+      glot.render("ja");
+    });
   }
 });
 
