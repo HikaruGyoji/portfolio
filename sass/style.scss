@@ -82,6 +82,17 @@ header {
       transition: 0.3s ease-in-out;
       transform: translateX(-105%);
       background-color: rgb(186, 255, 254);
+      .nav-menu {
+        padding: 20px;
+        color: white;
+        font-weight: bold;
+        font-size: 24px;
+        background-image: linear-gradient(
+          90deg,
+          rgb(34 141 167),
+          rgb(186 255 254)
+        );
+      }
       ul {
         a {
           color: rgb(34 141 167);
@@ -344,9 +355,18 @@ section {
     @include mq("md") {
       grid-template-columns: repeat(1, 300px);
     }
-
-    img {
-      height: 250px;
+    .works-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .works-content-title {
+        margin-top: 10px;
+        font-weight: bold;
+      }
+      img {
+        height: 250px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      }
     }
   }
 }
@@ -380,7 +400,7 @@ form {
   }
   textarea {
     padding: 10px;
-    height: 100px;
+    height: 200px;
     color: black;
     font-size: 14px;
     border: 1px solid #999;

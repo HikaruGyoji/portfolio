@@ -211,6 +211,13 @@ header #nav-content {
     transform: translateX(-105%);
     background-color: rgb(186, 255, 254);
   }
+  header #nav-content .nav-menu {
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    background-image: linear-gradient(90deg, rgb(34, 141, 167), rgb(186, 255, 254));
+  }
   header #nav-content ul a {
     color: rgb(34, 141, 167);
   }
@@ -465,10 +472,24 @@ section .row div {
     grid-template-columns: repeat(1, 300px);
   }
 }
-.skills .works-contents img,
-.works .works-contents img,
-.contact .works-contents img {
+.skills .works-contents .works-content,
+.works .works-contents .works-content,
+.contact .works-contents .works-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.skills .works-contents .works-content .works-content-title,
+.works .works-contents .works-content .works-content-title,
+.contact .works-contents .works-content .works-content-title {
+  margin-top: 10px;
+  font-weight: bold;
+}
+.skills .works-contents .works-content img,
+.works .works-contents .works-content img,
+.contact .works-contents .works-content img {
   height: 250px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .footer {
@@ -503,7 +524,7 @@ form label::after {
 }
 form textarea {
   padding: 10px;
-  height: 100px;
+  height: 200px;
   color: black;
   font-size: 14px;
   border: 1px solid #999;
