@@ -306,6 +306,7 @@ header .btn {
   font-weight: bold;
   transition: all 0.3s;
   border-radius: 5px;
+  text-align: center;
 }
 header .btn option {
   text-align: center;
