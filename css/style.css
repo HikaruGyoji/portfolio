@@ -144,7 +144,6 @@ header #nav-content {
     position: fixed;
     top: 0;
     left: 0;
-    height: 100px;
     z-index: 9999;
     width: 100%;
     /* チェックボックス等は非表示に */
@@ -337,6 +336,7 @@ header .logo {
 @media screen and (max-width: 768px) {
   .main-visual {
     height: 400px;
+    margin-top: 50px;
   }
 }
 .main-visual .main-background {
@@ -360,6 +360,7 @@ header .logo {
 @media screen and (max-width: 768px) {
   .main-visual .profile {
     margin: 0 auto;
+    height: 350px;
   }
 }
 .main-visual .profile .profile-background {
