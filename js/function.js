@@ -182,7 +182,7 @@ const othersChart = new Chart(othersCtx, {
 
 // scroll animation
 ScrollReveal().reveal(".skills-contents", {
-  duration: 1600,
+  duration: 2500,
   origin: "left",
   distance: "50px",
   reset: false,
