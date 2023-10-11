@@ -179,3 +179,25 @@ const othersChart = new Chart(othersCtx, {
   data: othersData,
   options: othersOptions,
 });
+
+// scroll animation
+ScrollReveal().reveal(".skills-contents", {
+  duration: 1600,
+  origin: "left",
+  distance: "50px",
+  reset: false,
+});
+
+ScrollReveal().reveal(".works-contents", {
+  duration: 1600,
+  origin: "right",
+  distance: "50px",
+  reset: false,
+});
+
+ScrollReveal().reveal(".contact-contents", {
+  duration: 1600,
+  origin: "left",
+  distance: "50px",
+  reset: false,
+});
