@@ -578,9 +578,9 @@ input[name="tab_item"] {
 .tree summary::before {
   content: "+";
   z-index: 1;
-  background: #696;
+  background: rgb(34 141 167);
   color: #fff;
-  line-height: calc(2 * var(--radius) - 2px);
+  line-height: calc(2 * var(--radius));
   text-align: center;
 }
 
