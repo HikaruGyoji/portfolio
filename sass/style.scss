@@ -473,8 +473,8 @@ form {
   transition: all 0.2s ease;
 }
 @include mq("md") {
-  .tab_illustration {
-    font-size: 12px;
+  .tab_item {
+    font-size: 5%;
   }
 }
 .tab_item:hover {
