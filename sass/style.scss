@@ -252,7 +252,6 @@ header {
     margin-right: 8%;
     @include mq("md") {
       margin: 0 auto;
-      height: 500px;
     }
     position: relative; /* Add relative positioning */
   }

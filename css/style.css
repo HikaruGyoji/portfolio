@@ -368,7 +368,6 @@ header .logo {
 @media screen and (max-width: 768px) {
   .main-visual .profile {
     margin: 0 auto;
-    height: 500px;
   }
 }
 .main-visual .profile .profile-background {
