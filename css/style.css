@@ -482,6 +482,11 @@ section .row div {
   flex-direction: column;
   align-items: center;
 }
+.skills .works-contents .works-content a,
+.works .works-contents .works-content a,
+.contact .works-contents .works-content a {
+  text-decoration: underline;
+}
 .skills .works-contents .works-content .works-content-title,
 .works .works-contents .works-content .works-content-title,
 .contact .works-contents .works-content .works-content-title {
