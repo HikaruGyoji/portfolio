@@ -367,6 +367,9 @@ section {
         margin-top: 10px;
         font-weight: bold;
       }
+      .works-content-description {
+        text-align: center;
+      }
       a {
         cursor: pointer;
         img {
@@ -485,7 +488,7 @@ input[name="tab_item"] {
 /*選択されているタブのコンテンツのみを表示*/
 #website:checked ~ #website_content,
 #app:checked ~ #app_content,
-#design:checked ~ #design_content,
+#illustration:checked ~ #illustration_content,
 #sticker:checked ~ #sticker_content {
   display: block;
 }
