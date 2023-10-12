@@ -3,6 +3,7 @@
 @use "./global" as *;
 
 header {
+  box-shadow: 0 0 10px black;
   .logo {
     a {
       color: white;

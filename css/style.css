@@ -133,6 +133,9 @@ select::-ms-expand {
   display: none;
 }
 
+header {
+  box-shadow: 0 0 10px black;
+}
 header .logo a {
   color: white;
 }
