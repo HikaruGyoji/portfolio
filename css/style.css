@@ -545,6 +545,9 @@ form button {
   padding: 10px 20px;
   margin-top: 20px;
 }
+form button:hover {
+  opacity: 0.7;
+}
 
 .thanks {
   height: 87vh;
