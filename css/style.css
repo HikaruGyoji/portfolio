@@ -421,6 +421,7 @@ section .row div {
   padding: 0 8%;
   height: auto;
   background-color: white;
+  margin-bottom: 10px;
 }
 .skills .skills-title,
 .skills .works-title,
@@ -462,7 +463,6 @@ section .row div {
   display: grid;
   grid-template-columns: repeat(3, 300px);
   gap: 20px;
-  margin-bottom: 100px;
   justify-content: center;
 }
 @media screen and (max-width: 768px) {
@@ -485,9 +485,14 @@ section .row div {
   margin-top: 10px;
   font-weight: bold;
 }
-.skills .works-contents .works-content img,
-.works .works-contents .works-content img,
-.contact .works-contents .works-content img {
+.skills .works-contents .works-content a,
+.works .works-contents .works-content a,
+.contact .works-contents .works-content a {
+  cursor: pointer;
+}
+.skills .works-contents .works-content a img,
+.works .works-contents .works-content a img,
+.contact .works-contents .works-content a img {
   height: 250px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
@@ -552,4 +557,58 @@ form button {
   to {
     transform: translateX(-100%);
   }
+}
+.works-tabs {
+  margin-top: 50px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+}
+
+/*タブのスタイル*/
+.tab_item {
+  width: 25%;
+  height: 50px;
+  border-bottom: 3px solid rgb(34, 141, 167);
+  background-color: #d9d9d9;
+  line-height: 50px;
+  font-size: 16px;
+  text-align: center;
+  color: black;
+  display: block;
+  float: left;
+  text-align: center;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+.tab_item:hover {
+  opacity: 0.75;
+}
+
+/*ラジオボタンを全て消す*/
+input[name=tab_item] {
+  display: none;
+}
+
+/*タブ切り替えの中身のスタイル*/
+.tab_content {
+  display: none;
+  padding: 40px 40px;
+  clear: both;
+  overflow: hidden;
+}
+
+/*選択されているタブのコンテンツのみを表示*/
+#website:checked ~ #website_content,
+#app:checked ~ #app_content,
+#design:checked ~ #design_content,
+#sticker:checked ~ #sticker_content {
+  display: block;
+}
+
+/*選択されているタブのスタイルを変える*/
+.works-tabs input:checked + .tab_item {
+  background-color: rgb(34, 141, 167);
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */

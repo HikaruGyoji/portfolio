@@ -188,7 +188,7 @@ ScrollReveal().reveal(".skills-contents", {
   reset: false,
 });
 
-ScrollReveal().reveal(".works-contents", {
+ScrollReveal().reveal(".works-tabs", {
   duration: 1600,
   origin: "right",
   distance: "50px",
