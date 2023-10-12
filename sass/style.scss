@@ -226,7 +226,7 @@ header {
   justify-content: flex-end;
   align-items: center;
   @include mq("md") {
-    height: 400px;
+    height: 550px;
     margin-top: 50px;
   }
   .main-background {
@@ -252,7 +252,7 @@ header {
     margin-right: 8%;
     @include mq("md") {
       margin: 0 auto;
-      height: 350px;
+      height: 500px;
     }
     position: relative; /* Add relative positioning */
   }

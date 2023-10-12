@@ -342,7 +342,7 @@ header .logo {
 }
 @media screen and (max-width: 768px) {
   .main-visual {
-    height: 400px;
+    height: 550px;
     margin-top: 50px;
   }
 }
@@ -368,7 +368,7 @@ header .logo {
 @media screen and (max-width: 768px) {
   .main-visual .profile {
     margin: 0 auto;
-    height: 350px;
+    height: 500px;
   }
 }
 .main-visual .profile .profile-background {
