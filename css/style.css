@@ -420,6 +420,7 @@ section .row div {
 
 .skills,
 .works,
+.profile,
 .contact {
   padding: 0 8%;
   height: auto;
@@ -428,18 +429,26 @@ section .row div {
 }
 .skills .skills-title,
 .skills .works-title,
+.skills .profile-title,
 .skills .contact-title,
 .works .skills-title,
 .works .works-title,
+.works .profile-title,
 .works .contact-title,
+.profile .skills-title,
+.profile .works-title,
+.profile .profile-title,
+.profile .contact-title,
 .contact .skills-title,
 .contact .works-title,
+.contact .profile-title,
 .contact .contact-title {
   padding-top: 50px;
   font-weight: bold;
 }
 .skills .skills-contents,
 .works .skills-contents,
+.profile .skills-contents,
 .contact .skills-contents {
   display: flex;
   width: 500px;
@@ -449,6 +458,7 @@ section .row div {
 @media screen and (max-width: 768px) {
   .skills .skills-contents,
   .works .skills-contents,
+  .profile .skills-contents,
   .contact .skills-contents {
     display: block;
     width: auto;
@@ -457,11 +467,13 @@ section .row div {
 }
 .skills .works-description,
 .works .works-description,
+.profile .works-description,
 .contact .works-description {
   margin-bottom: 30px;
 }
 .skills .works-contents,
 .works .works-contents,
+.profile .works-contents,
 .contact .works-contents {
   display: grid;
   grid-template-columns: repeat(3, 300px);
@@ -471,12 +483,14 @@ section .row div {
 @media screen and (max-width: 768px) {
   .skills .works-contents,
   .works .works-contents,
+  .profile .works-contents,
   .contact .works-contents {
     grid-template-columns: repeat(1, 300px);
   }
 }
 .skills .works-contents .works-content,
 .works .works-contents .works-content,
+.profile .works-contents .works-content,
 .contact .works-contents .works-content {
   display: flex;
   flex-direction: column;
@@ -484,28 +498,33 @@ section .row div {
 }
 .skills .works-contents .works-content a,
 .works .works-contents .works-content a,
+.profile .works-contents .works-content a,
 .contact .works-contents .works-content a {
   text-decoration: underline;
 }
 .skills .works-contents .works-content .works-content-title,
 .works .works-contents .works-content .works-content-title,
+.profile .works-contents .works-content .works-content-title,
 .contact .works-contents .works-content .works-content-title {
   margin-top: 10px;
   font-weight: bold;
 }
 .skills .works-contents .works-content .works-content-description,
 .works .works-contents .works-content .works-content-description,
+.profile .works-contents .works-content .works-content-description,
 .contact .works-contents .works-content .works-content-description {
   text-align: justify;
   padding: 0 7%;
 }
 .skills .works-contents .works-content a,
 .works .works-contents .works-content a,
+.profile .works-contents .works-content a,
 .contact .works-contents .works-content a {
   cursor: pointer;
 }
 .skills .works-contents .works-content a img,
 .works .works-contents .works-content a img,
+.profile .works-contents .works-content a img,
 .contact .works-contents .works-content a img {
   height: 250px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -633,4 +652,84 @@ input[name=tab_item] {
 .works-tabs input:checked + .tab_item {
   background-color: rgb(34, 141, 167);
   color: #fff;
+}
+
+.tree {
+  --spacing: 1.5rem;
+  --radius: 10px;
+}
+
+.tree li {
+  display: block;
+  position: relative;
+  padding-left: calc(2 * var(--spacing) - var(--radius) - 2px);
+}
+
+.tree ul {
+  margin-left: calc(var(--radius) - var(--spacing));
+  padding-left: 0;
+}
+
+.tree ul li {
+  border-left: 2px solid #ddd;
+}
+
+.tree ul li:last-child {
+  border-color: transparent;
+}
+
+.tree ul li::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: calc(var(--spacing) / -2);
+  left: -2px;
+  width: calc(var(--spacing) + 2px);
+  height: calc(var(--spacing) + 1px);
+  border: solid #ddd;
+  border-width: 0 0 2px 2px;
+}
+
+.tree summary {
+  display: block;
+  cursor: pointer;
+}
+
+.tree summary::marker,
+.tree summary::-webkit-details-marker {
+  display: none;
+}
+
+.tree summary:focus {
+  outline: none;
+}
+
+.tree summary:focus-visible {
+  outline: 1px dotted #000;
+}
+
+.tree li::after,
+.tree summary::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: calc(var(--spacing) / 2 - var(--radius));
+  left: calc(var(--spacing) - var(--radius) - 1px);
+  width: calc(2 * var(--radius));
+  height: calc(2 * var(--radius));
+  border-radius: 50%;
+  background: #ddd;
+}
+
+.tree summary::before {
+  content: "+";
+  z-index: 1;
+  background: #696;
+  color: #fff;
+  line-height: calc(2 * var(--radius) - 2px);
+  text-align: center;
+}
+
+.tree details[open] > summary::before {
+  content: "−";
 }/*# sourceMappingURL=style.css.map */
