@@ -368,7 +368,8 @@ section {
         font-weight: bold;
       }
       .works-content-description {
-        text-align: center;
+        text-align: justify;
+        padding: 0 7%;
       }
       a {
         cursor: pointer;
@@ -494,7 +495,7 @@ input[name="tab_item"] {
 #website:checked ~ #website_content,
 #app:checked ~ #app_content,
 #illustration:checked ~ #illustration_content,
-#sticker:checked ~ #sticker_content {
+#design:checked ~ #design_content {
   display: block;
 }
 
