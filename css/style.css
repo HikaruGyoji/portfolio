@@ -620,7 +620,7 @@ form button:hover {
 
 @media screen and (max-width: 768px) {
   .tab_item {
-    font-size: 5%;
+    font-size: 20%;
   }
 }
 .tab_item:hover {
