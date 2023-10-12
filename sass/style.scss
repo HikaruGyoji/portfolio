@@ -468,6 +468,11 @@ form {
   font-weight: bold;
   transition: all 0.2s ease;
 }
+@include mq("md") {
+  .tab_illustration {
+    font-size: 12px;
+  }
+}
 .tab_item:hover {
   opacity: 0.75;
 }

@@ -598,6 +598,11 @@ form button:hover {
   transition: all 0.2s ease;
 }
 
+@media screen and (max-width: 768px) {
+  .tab_illustration {
+    font-size: 12px;
+  }
+}
 .tab_item:hover {
   opacity: 0.75;
 }
