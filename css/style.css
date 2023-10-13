@@ -238,7 +238,7 @@ header #nav-content {
   }
   header #nav-content ul details a {
     font-weight: bold;
-    padding-left: 17px;
+    padding-left: 6%;
     padding-top: 15px;
   }
   header #nav-content ul details summary {
@@ -661,7 +661,11 @@ form button:hover {
   text-align: center;
   align-items: center;
   flex-direction: column;
+  padding: 0 8%;
   font-size: 24px;
+}
+.thanks a {
+  text-decoration: underline;
 }
 
 @keyframes animate {

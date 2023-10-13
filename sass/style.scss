@@ -111,7 +111,7 @@ header {
           display: flex;
           a {
             font-weight: bold;
-            padding-left: 17px;
+            padding-left: 6%;
             padding-top: 15px;
           }
           summary {
@@ -479,7 +479,11 @@ form {
   text-align: center;
   align-items: center;
   flex-direction: column;
+  padding: 0 8%;
   font-size: 24px;
+  a {
+    text-decoration: underline;
+  }
 }
 
 @keyframes animate {
