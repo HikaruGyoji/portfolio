@@ -104,6 +104,21 @@ header {
             border-bottom: solid 1px rgb(34 141 167);
           }
         }
+        details {
+          border-bottom: solid 1px rgb(34 141 167);
+          color: rgb(34 141 167);
+          padding: 20px;
+          display: flex;
+          a {
+            font-weight: bold;
+            padding-left: 17px;
+            padding-top: 15px;
+          }
+          summary {
+            font-size: 18px;
+            font-weight: bold;
+          }
+        }
       }
     }
 

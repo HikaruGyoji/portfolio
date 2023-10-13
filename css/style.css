@@ -230,6 +230,21 @@ header #nav-content {
     padding: 20px;
     border-bottom: solid 1px rgb(34, 141, 167);
   }
+  header #nav-content ul details {
+    border-bottom: solid 1px rgb(34, 141, 167);
+    color: rgb(34, 141, 167);
+    padding: 20px;
+    display: flex;
+  }
+  header #nav-content ul details a {
+    font-weight: bold;
+    padding-left: 17px;
+    padding-top: 15px;
+  }
+  header #nav-content ul details summary {
+    font-size: 18px;
+    font-weight: bold;
+  }
   header #nav-input:checked ~ #nav-close {
     display: block;
     opacity: 0.5;

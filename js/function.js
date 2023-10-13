@@ -208,3 +208,39 @@ ScrollReveal().reveal(".contact-contents", {
   distance: "50px",
   reset: false,
 });
+
+// HTML要素を取得
+const webTab = document.getElementById("webTab");
+const appTab = document.getElementById("appTab");
+const illustrationTab = document.getElementById("illustrationTab");
+const designTab = document.getElementById("designTab");
+const webInput = document.getElementById("web");
+const appInput = document.getElementById("app");
+const illustrationInput = document.getElementById("illustration");
+const designInput = document.getElementById("design");
+const navInput = document.getElementById("nav-input");
+
+// クリックイベントリスナーを追加
+webTab.addEventListener("click", () => {
+  // タブを選択
+  webInput.checked = true;
+  navInput.checked = false;
+});
+
+appTab.addEventListener("click", () => {
+  // タブを選択
+  appInput.checked = true;
+  navInput.checked = false;
+});
+
+illustrationTab.addEventListener("click", () => {
+  // タブを選択
+  illustrationInput.checked = true;
+  navInput.checked = false;
+});
+
+designTab.addEventListener("click", () => {
+  // タブを選択
+  designInput.checked = true;
+  navInput.checked = false;
+});
