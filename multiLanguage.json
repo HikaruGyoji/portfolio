@@ -83,6 +83,14 @@
     "en": "Send",
     "ja": "送信"
   },
+  "label-contact-success": {
+    "en": "Your inquiry has been successfully submitted.",
+    "ja": "お問い合わせ内容は無事に送信されました。"
+  },
+  "label-contact-return": {
+    "en": "Return to TOP page",
+    "ja": "TOPページに戻る"
+  },
   "label-year": {
     "en": "Year",
     "ja": "年"
