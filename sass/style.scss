@@ -178,6 +178,9 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 0 20%;
+    @include mq("lg") {
+      padding: 0 12%;
+    }
     @include mq("md") {
       padding: 8px 8%;
     }
@@ -194,6 +197,10 @@ header {
       li {
         display: inline-block;
         padding: 10px 25px;
+
+        @include mq("lg") {
+          padding: 10px 15px;
+        }
 
         a {
           color: white;
@@ -244,6 +251,10 @@ header {
     height: 550px;
     margin-top: 50px;
   }
+  @include mq("lg") {
+    height: 450px;
+    justify-content: center;
+  }
   .main-background {
     width: 100%;
     z-index: -1;
@@ -265,6 +276,9 @@ header {
       0.7
     ); /* Use rgba for background color with opacity */
     margin-right: 20%;
+    @include mq("lg") {
+      margin-right: 0;
+    }
     @include mq("md") {
       margin-right: 8%;
       margin: 0 auto;
@@ -341,6 +355,9 @@ section {
   height: auto;
   background-color: white;
   margin-bottom: 10px;
+  @include mq("lg") {
+    padding: 0 12%;
+  }
   @include mq("md") {
     padding: 0 8%;
   }
@@ -356,6 +373,9 @@ section {
     display: flex;
     width: 280px;
     gap: 15px;
+    @include mq("lg") {
+      width: 200px;
+    }
     @include mq("md") {
       display: block;
       width: auto;
@@ -374,6 +394,9 @@ section {
     grid-template-columns: repeat(3, 250px);
     gap: 20px;
     justify-content: center;
+    @include mq("lg") {
+      grid-template-columns: repeat(3, 180px);
+    }
     @include mq("md") {
       grid-template-columns: repeat(1, 300px);
     }
@@ -395,7 +418,6 @@ section {
       a {
         cursor: pointer;
         img {
-          height: 250px;
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
         }
       }

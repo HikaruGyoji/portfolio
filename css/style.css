@@ -295,6 +295,11 @@ header nav {
   justify-content: space-between;
   padding: 0 20%;
 }
+@media screen and (max-width: 1024px) {
+  header nav {
+    padding: 0 12%;
+  }
+}
 @media screen and (max-width: 768px) {
   header nav {
     padding: 8px 8%;
@@ -313,6 +318,11 @@ header nav ul {
 header nav ul li {
   display: inline-block;
   padding: 10px 25px;
+}
+@media screen and (max-width: 1024px) {
+  header nav ul li {
+    padding: 10px 15px;
+  }
 }
 header nav ul li a {
   color: white;
@@ -361,6 +371,12 @@ header .logo {
     margin-top: 50px;
   }
 }
+@media screen and (max-width: 1024px) {
+  .main-visual {
+    height: 450px;
+    justify-content: center;
+  }
+}
 .main-visual .main-background {
   width: 100%;
   z-index: -1;
@@ -379,6 +395,11 @@ header .logo {
   background-color: rgba(0, 0, 0, 0.7); /* Use rgba for background color with opacity */
   margin-right: 20%;
   position: relative; /* Add relative positioning */
+}
+@media screen and (max-width: 1024px) {
+  .main-visual .profile {
+    margin-right: 0;
+  }
 }
 @media screen and (max-width: 768px) {
   .main-visual .profile {
@@ -443,6 +464,14 @@ section .row div {
   background-color: white;
   margin-bottom: 10px;
 }
+@media screen and (max-width: 1024px) {
+  .skills,
+  .works,
+  .profile,
+  .contact {
+    padding: 0 12%;
+  }
+}
 @media screen and (max-width: 768px) {
   .skills,
   .works,
@@ -478,6 +507,14 @@ section .row div {
   width: 280px;
   gap: 15px;
 }
+@media screen and (max-width: 1024px) {
+  .skills .skills-contents,
+  .works .skills-contents,
+  .profile .skills-contents,
+  .contact .skills-contents {
+    width: 200px;
+  }
+}
 @media screen and (max-width: 768px) {
   .skills .skills-contents,
   .works .skills-contents,
@@ -510,6 +547,14 @@ section .row div {
   grid-template-columns: repeat(3, 250px);
   gap: 20px;
   justify-content: center;
+}
+@media screen and (max-width: 1024px) {
+  .skills .works-contents,
+  .works .works-contents,
+  .profile .works-contents,
+  .contact .works-contents {
+    grid-template-columns: repeat(3, 180px);
+  }
 }
 @media screen and (max-width: 768px) {
   .skills .works-contents,
@@ -557,7 +602,6 @@ section .row div {
 .works .works-contents .works-content a img,
 .profile .works-contents .works-content a img,
 .contact .works-contents .works-content a img {
-  height: 250px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
