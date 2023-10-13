@@ -90,7 +90,14 @@
     </div>
     <section id="skills" class="skills">
       <h2 class="skills-title" glot-model="label-skills">Skills</h2>
-      <p class="skills-description">About my skills</p>
+      <p class="skills-description" glot-model="label-skills-description">
+        The following is a scale of 1 to 5 in terms of skills. For now, the
+        indicators are: 1: I know what I need to know; 2: I understand it to
+        some extent; 3: I can use it in practice; 4: I can use it freely in
+        practice; 5: There is almost nothing I don't know; 6: I know what I need
+        to know; 7: I know what I need to know; 8: I know what I need to know;
+        9: I know what I need to know.
+      </p>
       <div class="skills-contents">
         <canvas id="frontRadarChart" width="200" height="200"></canvas>
         <canvas id="backRadarChart" width="200" height="200"></canvas>
@@ -104,15 +111,22 @@
       </p>
       <div class="works-tabs">
         <input id="website" type="radio" name="tab_item" checked />
-        <label class="tab_item" for="website">Web</label>
+        <label class="tab_item" for="website" glot-model="label-tab-web"
+          >Web</label
+        >
         <input id="app" type="radio" name="tab_item" />
-        <label class="tab_item" for="app">App</label>
+        <label class="tab_item" for="app" glot-model="label-tab-app">App</label>
         <input id="illustration" type="radio" name="tab_item" />
-        <label class="tab_item tab_illustration" for="illustration"
+        <label
+          class="tab_item tab_illustration"
+          for="illustration"
+          glot-model="label-tab-illustration"
           >Illustration</label
         >
         <input id="design" type="radio" name="tab_item" />
-        <label class="tab_item" for="design">Design</label>
+        <label class="tab_item" for="design" glot-model="label-tab-design"
+          >Design</label
+        >
         <div class="tab_content" id="website_content">
           <div class="works-contents">
             <div class="works-content">
