@@ -278,10 +278,12 @@ header {
     margin-right: 20%;
     @include mq("lg") {
       margin-right: 0;
+      padding: 20px;
     }
     @include mq("md") {
       margin-right: 8%;
       margin: 0 auto;
+      padding: 20px;
     }
     position: relative; /* Add relative positioning */
   }
