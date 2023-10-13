@@ -475,12 +475,16 @@ section .row div {
 }
 .skills .skills-description,
 .skills .works-description,
+.skills .profile-description,
 .works .skills-description,
 .works .works-description,
+.works .profile-description,
 .profile .skills-description,
 .profile .works-description,
+.profile .profile-description,
 .contact .skills-description,
-.contact .works-description {
+.contact .works-description,
+.contact .profile-description {
   margin-bottom: 30px;
 }
 .skills .works-contents,
