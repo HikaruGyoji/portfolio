@@ -43,6 +43,10 @@
     "en": "The following is a scale of 1 to 5 in terms of skills. For now, the indicators are: 1: I know what I need to know; 2: I understand it to some extent; 3: I can use it in practice; 4: I can use it freely in practice; 5: There is almost nothing I don't know;",
     "ja": "スキルに関して、1~5段階で表示しています。指標はとりあえず、1:調べれば分かる。2:ある程度理解している。3:実務で使用できる。4:実務で自由に駆使できる。5:分からないことはほぼ無い。"
   },
+  "label-works-description": {
+    "en": "For more information about the work, please see the ReadMe on GitHub.",
+    "ja": "作品の詳細については、GitHubのReadMeをご覧ください。"
+  },
   "label-tab-web": {
     "en": "Web",
     "ja": "ウェブ"
