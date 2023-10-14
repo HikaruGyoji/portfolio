@@ -44,8 +44,8 @@
     "ja": "スキルに関して、1〜5段階で表示しています。指標はとりあえず、1：調べれば分かる。2：ある程度理解している。3：実務で使用できる。4：実務で自由に駆使できる。5：分からないことはほぼ無い。"
   },
   "label-works-description": {
-    "en": "For more information about the work, please see the ReadMe on GitHub.",
-    "ja": "作品の詳細については、GitHubのReadMeをご覧ください。"
+    "en": "For more information about the work, please see the ReadMe on GitHub. Some samples are currently under maintenance and are temporarily placed.",
+    "ja": "作品の詳細については、GitHubのReadMeをご覧ください。現在メンテナンス中のためサンプルも置いてあります。"
   },
   "label-tab-web": {
     "en": "Web",
