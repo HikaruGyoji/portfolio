@@ -823,4 +823,23 @@ form button:hover {
 
 .tree details[open] > summary::before {
   content: "−";
+}
+
+@media screen and (max-width: 768px) {
+  .page-top {
+    width: 60px;
+    height: 60px;
+    background-color: rgb(34, 141, 167);
+    opacity: 0.6;
+    border-radius: 50%;
+    position: fixed;
+    right: 8%;
+    bottom: 5%;
+  }
+  .page-top i::before {
+    position: absolute;
+    left: 30%;
+    color: white;
+    font-size: 26px;
+  }
 }/*# sourceMappingURL=style.css.map */
