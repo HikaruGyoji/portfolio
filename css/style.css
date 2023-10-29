@@ -373,7 +373,7 @@ header .logo {
 }
 @media screen and (max-width: 768px) {
   .main-visual {
-    height: 550px;
+    height: 500px;
     margin-top: 50px;
   }
 }
