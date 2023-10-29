@@ -409,6 +409,19 @@ header .logo {
     padding: 20px;
   }
 }
+.main-visual .profile .description .sns-link {
+  font-size: 24px;
+  gap: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+.main-visual .profile .description .sns-link a {
+  color: white;
+}
+.main-visual .profile .description .sns-link a i:hover {
+  color: skyblue;
+  cursor: pointer;
+}
 .main-visual .profile .profile-background {
   width: 450px;
   height: 350px;
@@ -838,7 +851,7 @@ form button:hover {
   }
   .page-top i::before {
     position: absolute;
-    left: 30%;
+    left: 33%;
     color: white;
     font-size: 26px;
   }

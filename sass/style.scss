@@ -286,6 +286,23 @@ header {
       padding: 20px;
     }
     position: relative; /* Add relative positioning */
+    .description {
+      .sns-link {
+        font-size: 24px;
+        gap: 10px;
+        display: flex;
+        justify-content: flex-end;
+        a {
+          color: white;
+          i {
+            &:hover {
+              color: skyblue;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
   }
 
   .profile .profile-background {
@@ -650,7 +667,7 @@ form {
     i {
       &::before {
         position: absolute;
-        left: 30%;
+        left: 33%;
         color: white;
         font-size: 26px;
       }
