@@ -247,13 +247,13 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  @include mq("md") {
-    height: 550px;
-    margin-top: 50px;
-  }
   @include mq("lg") {
     height: 450px;
     justify-content: center;
+  }
+  @include mq("md") {
+    height: 550px;
+    margin-top: 50px;
   }
   .main-background {
     width: 100%;
@@ -350,6 +350,7 @@ header {
   .profile .description span {
     padding: 10px 0;
     display: block;
+    text-align: justify;
   }
 }
 

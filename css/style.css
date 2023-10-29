@@ -365,16 +365,16 @@ header .logo {
   justify-content: flex-end;
   align-items: center;
 }
-@media screen and (max-width: 768px) {
-  .main-visual {
-    height: 550px;
-    margin-top: 50px;
-  }
-}
 @media screen and (max-width: 1024px) {
   .main-visual {
     height: 450px;
     justify-content: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main-visual {
+    height: 550px;
+    margin-top: 50px;
   }
 }
 .main-visual .main-background {
@@ -459,6 +459,7 @@ header .logo {
 .main-visual .profile .description span {
   padding: 10px 0;
   display: block;
+  text-align: justify;
 }
 
 section .row div {
