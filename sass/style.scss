@@ -2,6 +2,10 @@
 @use "./base/reset";
 @use "./global" as *;
 
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   box-shadow: 0 0 10px black;
   .logo {

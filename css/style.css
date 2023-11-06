@@ -133,6 +133,10 @@ select::-ms-expand {
   display: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   box-shadow: 0 0 10px black;
 }
