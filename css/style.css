@@ -624,6 +624,31 @@ section .row div {
 .contact .works-contents .works-content a img {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
+@media screen and (max-width: 768px) {
+  .skills .works-contents .additional-content,
+  .works .works-contents .additional-content,
+  .profile .works-contents .additional-content,
+  .contact .works-contents .additional-content {
+    display: none;
+  }
+}
+.skills .works-contents .more-button,
+.works .works-contents .more-button,
+.profile .works-contents .more-button,
+.contact .works-contents .more-button {
+  display: none;
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+}
+@media screen and (max-width: 768px) {
+  .skills .works-contents .more-button,
+  .works .works-contents .more-button,
+  .profile .works-contents .more-button,
+  .contact .works-contents .more-button {
+    display: block;
+  }
+}
 
 .footer {
   background-image: linear-gradient(90deg, rgb(34, 141, 167), rgb(186, 255, 254));
