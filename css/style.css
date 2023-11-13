@@ -640,6 +640,8 @@ section .row div {
   border: 1px solid black;
   background-color: black;
   color: white;
+  border-radius: 5px;
+  font-weight: bold;
 }
 @media screen and (max-width: 768px) {
   .skills .works-contents .more-button,
@@ -647,6 +649,7 @@ section .row div {
   .profile .works-contents .more-button,
   .contact .works-contents .more-button {
     display: block;
+    height: 40px;
   }
 }
 
