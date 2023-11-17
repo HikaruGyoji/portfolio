@@ -677,7 +677,9 @@ form {
 }
 
 .page-top {
+  display: none;
   @include mq('md') {
+    display: block;
     width: 60px;
     height: 60px;
     background-color: rgb(34 141 167);

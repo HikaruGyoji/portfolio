@@ -871,8 +871,12 @@ form button:hover {
   content: "−";
 }
 
+.page-top {
+  display: none;
+}
 @media screen and (max-width: 768px) {
   .page-top {
+    display: block;
     width: 60px;
     height: 60px;
     background-color: rgb(34, 141, 167);
