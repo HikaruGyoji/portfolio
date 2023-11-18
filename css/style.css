@@ -609,7 +609,7 @@ section .row div {
 .works .works-contents .works-content .works-content-description,
 .profile .works-contents .works-content .works-content-description,
 .contact .works-contents .works-content .works-content-description {
-  text-align: justify;
+  text-align: left;
   padding: 0 7%;
 }
 .skills .works-contents .works-content a,
