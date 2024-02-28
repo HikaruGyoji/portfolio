@@ -54,7 +54,7 @@ const backData = {
   labels: ['Python', 'Django', 'GraphQL', 'FastAPI', 'MySQL', 'Express.js'],
   datasets: [
     {
-      data: [4, 2, 2, 2, 2, 3],
+      data: [4, 2, 2, 4, 3, 3],
       label: 'Back-end',
       backgroundColor: 'rgba(255, 0, 0, 0.3)', // 赤系の背景色
       borderCapStyle: 'butt',
