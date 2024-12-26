@@ -1,0 +1,21 @@
+# Node.js関連の不要ファイル・フォルダを除外
+
+# node_modules フォルダを除外
+node_modules/
+
+# npmやyarnのログファイルを除外
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 環境変数などの設定ファイルを除外
+.env
+
+# バージョン管理外のローカル設定ファイルを除外
+.idea/
+.vscode/
+*.swp
+
+# OSごとの不要ファイルを除外
+.DS_Store
+Thumbs.db
