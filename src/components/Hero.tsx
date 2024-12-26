@@ -12,7 +12,7 @@ const Hero = () => {
       id="top"
       className="min-h-screen flex items-center justify-center relative overflow-hidden"
       style={{
-        background: `url('/static/background.gif') no-repeat center center/cover`,
+        background: `url('/portfolio/static/background.gif') no-repeat center center/cover`,
       }}
     >
       {/* 背景のグラデーションオーバーレイ */}
