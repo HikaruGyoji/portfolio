@@ -5,7 +5,7 @@ import fs from "fs";
 
 export default defineConfig({
   build: {
-    outDir: "dist",
+    outDir: "docs",
   },
   base: "/portfolio/",
   plugins: [
@@ -13,7 +13,7 @@ export default defineConfig({
     {
       name: "add-nojekyll",
       closeBundle() {
-        const nojekyllPath = resolve(__dirname, "dist", ".nojekyll");
+        const nojekyllPath = resolve(__dirname, "docs", ".nojekyll");
         fs.writeFileSync(nojekyllPath, "");
       },
     },
