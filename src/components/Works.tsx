@@ -3,12 +3,14 @@ import { ExternalLink, Github } from "lucide-react";
 import { useLanguage } from "../contexts/LanguageContext";
 import { translations } from "../locales/translations";
 import { Project, WorkCategory } from "../types/works";
-import { projects } from "../data/projects";
 import WorksTab from "./WorksTab";
 
 const Works = () => {
   const { language } = useLanguage();
   const t = translations[language];
+
+  const projects: Project[] = t.works.projects;
+
   const [activeCategory, setActiveCategory] = useState<WorkCategory>("web");
   const [visibleCount, setVisibleCount] = useState(3); // 最初に表示するプロジェクト数
 
