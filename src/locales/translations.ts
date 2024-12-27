@@ -87,6 +87,15 @@ export const translations = {
           category: "app",
         },
         {
+          title: "HIITer",
+          description:
+            "This app supports building a workout habit by incorporating HIIT (High-Intensity Interval Training) into your routine.",
+          image: "/portfolio/static/img/app/hiiter.png",
+          skills: ["React", "Next", "PWA"],
+          demo: "https://www.makuake.com/project/hiiter/",
+          category: "app",
+        },
+        {
           title: "News & Weather",
           description: "App to retrieve and display news and weather",
           image: "/portfolio/static/img/app/news.gif",
@@ -314,6 +323,15 @@ export const translations = {
           image: "/portfolio/static/img/app/pocket_money_todo.png",
           skills: ["Flutter", "SQLite", "Riverpod"],
           demo: "/portfolio/static/img/app/pocket_money_todo.png",
+          category: "app",
+        },
+        {
+          title: "HIITer",
+          description:
+            "このアプリは、HIIT（高強度インターバルトレーニング）を取り入れた運動の習慣化をサポートするアプリです。",
+          image: "/portfolio/static/img/app/hiiter.png",
+          skills: ["React", "Next"],
+          demo: "https://www.makuake.com/project/hiiter/",
           category: "app",
         },
         {
