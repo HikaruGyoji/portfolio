@@ -19,7 +19,7 @@ const Hero = () => {
       <div className="absolute inset-0 bg-gradient-to-br from-teal-500/20 to-purple-500/20"></div>
 
       {/* カードで囲まれた全体コンテンツ */}
-      <div className="relative z-10 bg-zinc-800/70 text-zinc-100 p-8 rounded-lg shadow-lg max-w-2xl mx-auto">
+      <div className="mt-16 relative z-10 bg-zinc-800/70 text-zinc-100 p-8 rounded-lg shadow-lg max-w-2xl mx-auto">
         {/* タイトルと名前 */}
         <div className="mb-4 text-left">
           <h1 className="text-2xl md:text-3xl font-bold mb-2 bg-gradient-to-r from-teal-400 to-purple-400 text-transparent bg-clip-text max-w-fit">
