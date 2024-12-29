@@ -541,8 +541,8 @@ export const translations = {
           year: "2024",
         },
       ],
-      showMore: "Show More",
-      showLess: "Show Less",
+      showMore: "もっと見る",
+      showLess: "表示を減らす",
     },
     contact: {
       title: "お問い合わせ",
