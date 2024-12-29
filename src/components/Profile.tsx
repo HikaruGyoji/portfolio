@@ -40,7 +40,7 @@ const Profile = () => {
     <section id="profile" className="py-20 bg-zinc-800/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* セクションタイトル */}
-        <h2 className="text-4xl font-bold mb-12 text-center bg-gradient-to-r from-teal-400 to-purple-400 text-transparent bg-clip-text">
+        <h2 className="text-4xl font-bold mb-12 text-center bg-gradient-to-r from-teal-400 to-purple-400 text-transparent bg-clip-text max-w-fit justify-self-center">
           {t.profile.title}
         </h2>
 
