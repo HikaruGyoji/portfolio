@@ -13,6 +13,8 @@ export const translations = {
         "In April 2021, after I got a master's degree from the Tokyo University of Science, I joined SoftBank Corporation as an engineer and was in charge of operation and maintenance of the customer management system in the Integrated Core System Operation Section.",
       summary2:
         "In November 2021, I moved front-end engineer / designer. I handled the creation of portal sites for research institutions and the addition of functions to database search systems.",
+      summary3:
+        "Recently, I primarily work as a front-end engineer, but in personal projects, I also engage in backend development and AI development.",
     },
     works: {
       title: "Featured Works",
@@ -291,6 +293,9 @@ export const translations = {
         "東京理科大学で修士号を取得し、2021年4月にソフトバンク株式会社にエンジニアとして入社、統合基幹システム運用課で顧客管理システムの運用保守を担当しました。",
       summary2:
         "2021年11月にフロントエンドエンジニア/デザイナーとして転職しました。現在は、研究機関向けのポータルサイトの構築やデータベース検索システムの機能追加などを担当しています。",
+
+      summary3:
+        "最近では、主にフロントエンドエンジニアとして活動していますが、個人開発ではバックエンドやAI開発にも取り組んでいます。",
     },
     works: {
       title: "制作実績",

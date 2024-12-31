@@ -28,6 +28,7 @@ const Hero = () => {
           <h2 className="text-2xl md:text-4xl font-bold mb-4">{t.hero.name}</h2>
           <p className="text-lg md:text-xl mb-4">{t.hero.summary}</p>
           <p className="text-lg md:text-xl mb-4">{t.hero.summary2}</p>
+          <p className="text-lg md:text-xl mb-4">{t.hero.summary3}</p>
         </div>
 
         {/* アイコンリンク */}
