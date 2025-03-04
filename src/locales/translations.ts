@@ -31,6 +31,14 @@ export const translations = {
       projects: [
         // Web
         {
+          title: "VocaBoost",
+          description: "A Multi-platform vocabulary learning app",
+          image: "/portfolio/static/img/web/vocaboost.png",
+          skills: ["Javascript", "React", "PWA"],
+          demo: "https://www.vocaboost.jp",
+          category: "web",
+        },
+        {
           title: "Nature Coffee",
           description: "Simple cafe website top page",
           image: "/portfolio/static/img/web/nature-coffee.png",
@@ -312,6 +320,14 @@ export const translations = {
 
       projects: [
         // Web
+        {
+          title: "VocaBoost",
+          description: "マルチプラットフォーム対応の単語学習アプリ",
+          image: "/portfolio/static/img/web/vocaboost.png",
+          skills: ["Javascript", "React", "PWA"],
+          demo: "https://www.vocaboost.jp",
+          category: "web",
+        },
         {
           title: "Nature Coffee",
           description: "シンプルなカフェのホームページ",
