@@ -45,9 +45,12 @@ const Works = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredProjects.slice(0, visibleCount).map((project, index) => (
-            <div
+            <a
               key={index}
-              className="bg-zinc-800 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-transform duration-300"
+              href={project.demo || project.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block bg-zinc-800 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-transform duration-300"
             >
               <div className="relative h-48">
                 <img
@@ -56,7 +59,7 @@ const Works = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="p-6">
+              <div className="p-6 hover:bg-zinc-800 transition-colors rounded-lg">
                 <h3 className="text-xl font-semibold mb-2 text-zinc-100">
                   {project.title}
                 </h3>
@@ -71,32 +74,8 @@ const Works = () => {
                     </span>
                   ))}
                 </div>
-                <div className="flex space-x-4">
-                  {project.github && (
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-zinc-400 hover:text-teal-400 transition-colors"
-                      aria-label={t.works.viewGithub}
-                    >
-                      <Github size={20} />
-                    </a>
-                  )}
-                  {project.demo && (
-                    <a
-                      href={project.demo}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-zinc-400 hover:text-teal-400 transition-colors"
-                      aria-label={t.works.viewDemo}
-                    >
-                      <ExternalLink size={20} />
-                    </a>
-                  )}
-                </div>
               </div>
-            </div>
+            </a>
           ))}
         </div>
 
