@@ -31,6 +31,33 @@ export const translations = {
       projects: [
         // Web
         {
+          title: 'HIITer',
+          description:
+            'Corporate website for HIITer, an app development team building lifestyle apps that enrich everyday life.',
+          image: '/portfolio/static/img/web/hiiter-corporate.png',
+          skills: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS'],
+          demo: 'https://www.hiiter.jp/',
+          category: 'web',
+        },
+        {
+          title: 'Wasureboushi',
+          description:
+            'Landing page for a smart packing assistant that links calendar events to item checklists and guides preparation with night-before and day-of notifications.',
+          image: '/portfolio/static/img/web/wasureboushi.png',
+          skills: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS'],
+          demo: 'https://wasureboushi.hiiter.jp/',
+          category: 'web',
+        },
+        {
+          title: 'Ima Focus Todo',
+          description:
+            'Landing page for a focus-first TODO app with app blocking and Pomodoro timers to help users concentrate on what matters now.',
+          image: '/portfolio/static/img/web/ima-focus-todo.png',
+          skills: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS'],
+          demo: 'https://ima.hiiter.jp/',
+          category: 'web',
+        },
+        {
           title: 'VocaBoost',
           description: 'A Multi-platform vocabulary learning app',
           image: '/portfolio/static/img/web/vocaboost.png',
@@ -87,6 +114,15 @@ export const translations = {
           category: 'web',
         },
         // App
+        {
+          title: 'Rakuwari',
+          description:
+            'A bill-splitting app that auto-calculates shares for dinners, trips, and events, with real-time group editing via link sharing.',
+          image: '/portfolio/static/img/app/rakuwari.png',
+          skills: ['Flutter', 'Firebase'],
+          demo: 'https://rakuwari.hiiter.jp/',
+          category: 'app',
+        },
         {
           title: 'Pocket Money TODO',
           description:
@@ -331,6 +367,33 @@ export const translations = {
       projects: [
         // Web
         {
+          title: 'HIITer',
+          description:
+            '人々の暮らしを豊かにするアプリを開発するHIITerのコーポレートサイト。',
+          image: '/portfolio/static/img/web/hiiter-corporate.png',
+          skills: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS'],
+          demo: 'https://www.hiiter.jp/',
+          category: 'web',
+        },
+        {
+          title: 'わすれぼうし',
+          description:
+            '予定に合わせて持ち物を提案し、前夜と当日の通知で準備を完了へ導く忘れ物防止アプリのランディングページ。',
+          image: '/portfolio/static/img/web/wasureboushi.png',
+          skills: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS'],
+          demo: 'https://wasureboushi.hiiter.jp/',
+          category: 'web',
+        },
+        {
+          title: 'Ima Focus Todo',
+          description:
+            'アプリブロックとポモドーロで「今」に集中できるTODOアプリのランディングページ。',
+          image: '/portfolio/static/img/web/ima-focus-todo.png',
+          skills: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS'],
+          demo: 'https://ima.hiiter.jp/',
+          category: 'web',
+        },
+        {
           title: 'VocaBoost',
           description: 'マルチプラットフォーム対応の単語学習アプリ',
           image: '/portfolio/static/img/web/vocaboost.png',
@@ -387,6 +450,15 @@ export const translations = {
           category: 'web',
         },
         // App
+        {
+          title: 'ラクわり',
+          description:
+            '飲み会・旅行・イベントなどの割り勘を自動計算し、リンク共有で同時編集も可能なアプリ。',
+          image: '/portfolio/static/img/app/rakuwari.png',
+          skills: ['Flutter', 'Firebase'],
+          demo: 'https://rakuwari.hiiter.jp/',
+          category: 'app',
+        },
         {
           title: 'おこづかい TODO',
           description:

@@ -1,5 +1,5 @@
 import React from "react";
-import { Mail, Twitter, Instagram } from "lucide-react";
+import { Mail, Twitter, Instagram, Linkedin } from "lucide-react";
 import { useLanguage } from "../contexts/LanguageContext";
 import { translations } from "../locales/translations";
 
@@ -38,6 +38,14 @@ const Hero = () => {
             className="hover:text-teal-400 transition-colors"
           >
             <Mail size={24} />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/hikaru-gyoji-8221a936b"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-teal-400 transition-colors"
+          >
+            <Linkedin size={24} />
           </a>
           <a
             href="https://x.com/hikarugyoji"
