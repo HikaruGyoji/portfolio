@@ -191,7 +191,7 @@ export const translations = {
       timeline: 'Timeline',
       timelineEvent: [
         {
-          year: '2024',
+          year: '2024-2026',
           title: 'Senior Frontend Engineer',
           description:
             'Developing applications tailored for scientists, focusing on intuitive interfaces and advanced data visualization',
@@ -271,6 +271,16 @@ export const translations = {
           name: 'TOEIC Listening & Reading Score 815',
           issuer: 'The Institute for International Business Communication',
           year: '2024',
+        },
+        {
+          name: 'EIKEN Grade Pre-1',
+          issuer: 'EIKEN',
+          year: '2026',
+        },
+        {
+          name: 'TOEIC Listening & Reading Score 865',
+          issuer: 'The Institute for International Business Communication',
+          year: '2026',
         },
       ],
       showMore: 'Show More',
@@ -480,7 +490,7 @@ export const translations = {
       timeline: '経歴',
       timelineEvent: [
         {
-          year: '2024',
+          year: '2024-2026',
           title: 'シニアフロントエンドエンジニア',
           description:
             '科学者向けのアプリケーションを開発。直感的なインターフェースと高度なデータ可視化に重点を置いています。',
@@ -558,8 +568,18 @@ export const translations = {
         },
         {
           name: 'TOEIC Listening & Reading 815点',
-          issuer: 'The Institute for International Business Communication',
+          issuer: '一般財団法人 国際ビジネスコミュニケーション協会',
           year: '2024',
+        },
+        {
+          name: '実用英語技能検定 準1級',
+          issuer: '公益財団法人 日本英語検定協会',
+          year: '2026',
+        },
+        {
+          name: 'TOEIC Listening & Reading Test 865点',
+          issuer: '一般財団法人 国際ビジネスコミュニケーション協会',
+          year: '2026',
         },
       ],
       showMore: 'もっと見る',
