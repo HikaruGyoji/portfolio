@@ -649,7 +649,7 @@ export const translations = {
           year: '2026',
         },
         {
-          name: 'TOEIC Listening & Reading Test 865点',
+          name: 'TOEIC Listening & Reading 865点',
           issuer: '一般財団法人 国際ビジネスコミュニケーション協会',
           year: '2026',
         },
